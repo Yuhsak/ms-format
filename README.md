@@ -43,5 +43,5 @@ format('{day}d, {hour}h, {min}m, {sec}s, {ms}ms', ms, {ceil: 'hour'})
 format('{day}d, {hour}h, {min}m, {sec}s, {ms}ms', ms, {ceil: 'min'})
 
 // 25:01:01
-format({HOUR}:{MIN}:{SEC}, ms, {ceil: 'hour'})
+format('{HOUR}:{MIN}:{SEC}', ms, {ceil: 'hour'})
 ```
