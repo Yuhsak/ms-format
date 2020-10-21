@@ -30,7 +30,7 @@ parse(ms, {ceil: 'min'})
 // {day: 0, hour: 0, min: 0, sec: 90061, ms: 1, DAY: '0', HOUR: '00', MIN: '00', SEC: '90061', MS: '001'}
 parse(ms, {ceil: 'sec'})
 
-// {day: 0, hour: 0, min: 0, sec: , ms: 90061001, DAY: '0', HOUR: '00', MIN: '00', SEC: '00', MS: '90061001'}
+// {day: 0, hour: 0, min: 0, sec: 0, ms: 90061001, DAY: '0', HOUR: '00', MIN: '00', SEC: '00', MS: '90061001'}
 parse(ms, {ceil: 'ms'})
 
 // 1d, 1h, 1m, 1s, 1ms
