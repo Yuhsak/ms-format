@@ -1,4 +1,4 @@
-# ms-format
+# ms-format [![Build Status](https://travis-ci.org/Yuhsak/ms-format.svg?branch=main)](https://travis-ci.org/Yuhsak/ms-format) [![Coverage Status](https://coveralls.io/repos/github/Yuhsak/ms-format/badge.svg?branch=main)](https://coveralls.io/github/Yuhsak/ms-format?branch=main)
 
 ## Install
 

@@ -11,6 +11,11 @@ describe('parse', () => {
 
   test('parse', () => {
     expect(parse(ms)).toStrictEqual({
+      DAY: '1',
+      HOUR: '01',
+      MIN: '01',
+      SEC: '01',
+      MS: '001',
       day: 1,
       hour: 1,
       min: 1,
@@ -21,6 +26,11 @@ describe('parse', () => {
 
   test('ceil: day', () => {
     expect(parse(ms, {ceil: 'day'})).toStrictEqual({
+      DAY: '1',
+      HOUR: '01',
+      MIN: '01',
+      SEC: '01',
+      MS: '001',
       day: 1,
       hour: 1,
       min: 1,
@@ -31,6 +41,11 @@ describe('parse', () => {
 
   test('ceil: hour', () => {
     expect(parse(ms, {ceil: 'hour'})).toStrictEqual({
+      DAY: '0',
+      HOUR: '25',
+      MIN: '01',
+      SEC: '01',
+      MS: '001',
       day: 0,
       hour: 25,
       min: 1,
@@ -41,6 +56,11 @@ describe('parse', () => {
 
   test('ceil: min', () => {
     expect(parse(ms, {ceil: 'min'})).toStrictEqual({
+      DAY: '0',
+      HOUR: '00',
+      MIN: '1501',
+      SEC: '01',
+      MS: '001',
       day: 0,
       hour: 0,
       min: 1501,
@@ -51,6 +71,11 @@ describe('parse', () => {
 
   test('ceil: sec', () => {
     expect(parse(ms, {ceil: 'sec'})).toStrictEqual({
+      DAY: '0',
+      HOUR: '00',
+      MIN: '00',
+      SEC: '90061',
+      MS: '001',
       day: 0,
       hour: 0,
       min: 0,
@@ -61,6 +86,11 @@ describe('parse', () => {
 
   test('ceil: ms', () => {
     expect(parse(ms, {ceil: 'ms'})).toStrictEqual({
+      DAY: '0',
+      HOUR: '00',
+      MIN: '00',
+      SEC: '00',
+      MS: ms.toString(),
       day: 0,
       hour: 0,
       min: 0,

@@ -1,0 +1,16 @@
+os: linux
+dist: focal
+language: node_js
+node_js:
+  - 12
+script: npm run test:ci
+deploy:
+  provider: npm
+  email: yuhsak.inoue@gmail.com
+  api_token:
+    secure: DOJMF0S2BKJnZwQNqosswEZ58+ecS96yCZt4ofr7NhxA1JW/n0Bg12GQWuQ7SqZGOiuSIGyO00H+N54+lOGrkh1Im7jxF1dOv2olhnwBtLGMK4Dbf1wwEf6xGX77T9eZbP28NdrgaocclhrDzHTJxxTPhaISDhB12Xm7KFrxCs4KmX9pBJKYwxZQsPs4xcHdjb/9pDPd0uow0BVwVXJ3q52xMm/838isLF/zf+s2wk7pewl1n5jKBY3lyusUUrIqaVuDc51ckWfqwJAxn1HFUvJrHDCcREWyWXsloFx0gFYs1X4Gnfr2Dx47yytAUS0q+Te6zPFk6nrm6Qd+CjmrqRryWby+/T+L5gz/CqrWQdey50O96txN/Voo5kDGwS7Qr6UR7MEehIfckaHZhbIwh43AMjZZ5hgDNcgYUiTFMfZTK5zJEPeATKPd+4zcZEFrtHjDTjFR7Nm+h3FSVSQCjf83lm/hk8RgQbMfKuLg4/NvpefO/Jwrgtfb1sVfIomJxULFOKfh4J+1nEjMywNthupNAeIKDBh4RU6egdirFQDi8cVr1LWF03ASQ6m/fKbtzgZ7N9hlTOTQ8E+k4J/SN0sLbXcsW6mvx8SmBI32+clzbKU4VyjsCfhBh/B3rGDM63dSAhdReAEoboJbejR2lYle/kDGR72n73TPZix2J3Q=
+  on:
+    tags: true
+    repo: Yuhsak/ms-format
+    branch: main
+  skip_cleanup: true
